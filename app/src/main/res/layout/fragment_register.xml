@@ -11,23 +11,14 @@
         android:id="@+id/tv_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/indigo_daisy"
         android:text="@string/register"
         android:textAlignment="center"
         android:textSize="50sp" />
-
-    <TextView
-        android:id="@+id/tv_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tag"
-        android:textSize="17sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,6 +84,20 @@
         android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/telefono"
+        android:inputType="phone"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -118,6 +123,15 @@
         android:inputType="textPassword"
         android:padding="15dp"
         android:textSize="15sp" />
+
+    <Switch
+        android:id="@+id/switch_suplidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="@string/suplidor" />
 
     <RelativeLayout
         android:layout_width="match_parent"

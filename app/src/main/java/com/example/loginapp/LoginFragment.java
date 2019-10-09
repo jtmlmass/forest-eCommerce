@@ -16,24 +16,25 @@ import com.example.loginapp.services.LoginService;
  */
 public class LoginFragment extends Fragment {
 
-    private final LoginService loginService = new LoginService();
+        private final LoginService loginService = new LoginService();
+        private Button btnLogin;
+        private OlvidarContrasena olvidarContrasena;
+        public LoginFragment() {
+    //        Button buttonLogin = getActivity().findViewById(R.id.btn_login);
+    //        buttonLogin.setOnClickListener(new View.OnClickListener() {
+    //            public void onClick(View v) {
+    //                // TODO Auto-generated method stub
+    //                loginService.execute();
+    //            }
+    //        });
+        }
 
-    public LoginFragment() {
-//        Button buttonLogin = getActivity().findViewById(R.id.btn_login);
-//        buttonLogin.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                loginService.execute();
-//            }
-//        });
-    }
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false);
-    }
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            // Inflate the layout for this fragment
+            return inflater.inflate(R.layout.fragment_login, container, false);
+        }
 
 }
