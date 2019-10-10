@@ -3,7 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello fragmento vacio</string>
-    <string name="swipe_left_for_register">Swipe a la izquierda para Registrarse</string>
+    <string name="swipe_left_for_register">Swipe a la izquierda para Registrarse\nA la derecha si olvido su contraseña</string>
+    <string name="swipe_left_for_login">Swipe a la izquierda para Login</string>
     <string name="login">Login</string>
     <string name="password">Clave</string>
     <string name="e_mail">Email</string>
@@ -27,6 +28,7 @@
     <string name="telefono">Telefono</string>
     <string name="cancelar">Cancelar</string>
     <string name="enviar">Enviar</string>
+    <string name="usuario">Usuario</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>

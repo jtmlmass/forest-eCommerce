@@ -20,7 +20,7 @@
         android:id="@+id/tv_soporte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/et_email"
+        android:layout_above="@id/et_usuario"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/roboto_regular"
@@ -28,17 +28,17 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_usuario"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/e_mail"
+        android:layout_above="@id/et_password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:padding="15dp"
-        android:inputType="textEmailAddress"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_above="@id/et_password"
         android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/usuario"
+        android:inputType="text"
+        android:padding="15dp"
         android:textSize="15sp" />
 
     <EditText
@@ -61,33 +61,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
-        android:background="@drawable/btn_custom"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="15dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/white"
-        android:text="@string/login"/>
-
-    <Button
-        android:id="@+id/btn_cancelar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="87dp"
         android:layout_marginRight="20dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/btn_custom"
         android:fontFamily="@font/roboto_regular"
-        android:text="@string/olvidar_contrasena"
+        android:text="@string/login"
         android:textColor="@android:color/white" />
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_arrow_right"
         android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_arrow_right" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/swipeRight"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/ic_arrow_left" />
 
     <TextView
         android:id="@+id/swipeRight"

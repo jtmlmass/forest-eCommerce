@@ -6,12 +6,31 @@
     tools:context=".LoginFragment">
 
     <TextView
+        android:id="@+id/swipeRight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/swipe_right_for_login"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/swipeRight2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_arrow_right" />
+
+    <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/tv_soporte"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="19dp"
         android:fontFamily="@font/indigo_daisy"
         android:text="@string/app_name"
         android:textSize="50sp" />
@@ -22,13 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/et_password"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="55dp"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/olvidar_contrasena_soportte"
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_telefono"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
@@ -42,30 +61,50 @@
         android:padding="15dp"
         android:textSize="15sp" />
 
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_telefono"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_repassword3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/re_type_password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
     <Button
         android:id="@+id/btn_enviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
+        android:layout_below="@id/et_telefono"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="152dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_custom"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/enviar"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/btn_cancelar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorPrimary"
-        android:fontFamily="@font/roboto_regular"
-        android:text="@string/cancelar"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>
